@@ -5,7 +5,7 @@ const body_parser = require('body-parser');
 //import pg-promise
 var pgp = require('pg-promise')({});
     // setup db
-var db = pgp({database: 'restaurant'});
+var db = pgp(process.env.DATABASE_URL || {database: 'restaurant'});
 
 var session = require('express-session');
 //used for hashing PW
