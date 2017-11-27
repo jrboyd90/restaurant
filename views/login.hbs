@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-4  mx-auto text-center" style="margin: 10% 0">
+      <form action="/login" method="POST">
+        <label>Username:  </label>
+        <input name="userName" type="text" class="form-control" placeholder="Username" /><br  />
+        <label>Password </label>
+        <input name="password" type="password" class="form-control" placeholder="password" /><br  />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{{#if err}}
+  <div class="row">
+      <div class="col-4 mx-auto text-center">
+        <h2>{{err}}. Please try again.</h2>
+      </div>
+  </div>
+{{/if}}

@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-8  mx-auto text-center" style="margin: 10% 0">
+      <h3>{{results.[0].name}}</h3>
+      <h3>{{results.[0].address}}</h3>
+      <h3>{{results.[0].category}}</h3>
+      {{#each results}}
+
+        <li>    <b>Title: </b> {{title}} <b>STARS: </b> {{stars}} <br/><b>Review: </b>   {{review}} <br/><b>NAME: </b> {{rev_name}} <b>E-MAIL: </b> {{email}}
+
+        </li>
+
+      {{/each}}
+
+      <br />
+      <form action="/addReview" method="GET">
+        <input type="hidden" name="id" value="{{results.[0].id}}">
+        <button type="submit" value="submit">Add review</button>
+      </form>
+    </div>
+  </div>
+</div>  
+{{#if name}}
+<div class="row">
+  <div class="col-4 mx-auto text-center">
+    Hello, {{name}}!
+  </div>
+</div>
+{{/if}}

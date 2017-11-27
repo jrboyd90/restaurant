@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-4  mx-auto text-center" style="margin: 10% 0">
+      <form action="/restaurant/submit_new" method="POST">
+        <label>Name of Restaurant: </label><br />
+        <input name="name" type="text" class="form-control" placeholder="Name" /><br  />
+        <label>Address: </label><br />
+        <input name="address" type="text" class="form-control" placeholder="Address" /><br  />
+        <label>Category: </label><br />
+        <input name="category" type="text" class="form-control" placeholder="Category" /><br  />
+        <button type="submit">Submit New Restaurant</button>
+      </form>
+    </div> 
+  </div>
+</div> 
+{{#if name}}
+  <div class="row">
+    <div class="col-4 mx-auto text-center">
+      Hello, {{name}}!
+    </div>
+  </div>
+{{/if}}

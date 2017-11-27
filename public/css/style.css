@@ -1,0 +1,15 @@
+body {
+   background: url("/static/img/food.jpg") no-repeat center center fixed;
+   height: 100vh;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+}
