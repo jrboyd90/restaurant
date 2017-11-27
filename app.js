@@ -220,6 +220,7 @@ app.get('/restaurant/:id',function (req,resp,next) {
 });
 
 //starts up server on port 8000
-app.listen(8888, function () {
-  console.log('Listening on port 8888');
+var PORT = process.env.PORT || 8888;
+app.listen(PORT, function () {
+  console.log('Listening on port ' + PORT);
 });
