@@ -2,11 +2,22 @@
   <div class="container-fluid">
     <div class="col-4  mx-auto text-center" style="margin: 10% 0">
       <form action="/login" method="POST">
-        <label>Username:  </label>
-        <input name="userName" type="text" class="form-control" placeholder="Username" /><br  />
+        <label>Username: </label>
+        <input name="userName" type="text" class="form-control" placeholder="Username" />
+        <br />
         <label>Password </label>
-        <input name="password" type="password" class="form-control" placeholder="password" /><br  />
+        <input name="password" type="password" class="form-control" placeholder="password" />
+        <br />
         <button type="submit">Login</button>
+      </form>
+      <h5> or </h5>
+      
+      <form action="/newUser" method="get">
+        <div class="form-group">
+          <label></label>
+
+          <button type="submit" value="submit">Create Account</button>
+        </div>
       </form>
     </div>
   </div>
