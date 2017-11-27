@@ -109,6 +109,7 @@ app.post('/restaurant/submit_new', function(req, resp, next) {
     address: address,
     category: category,
   }
+  
   var q = 'INSERT INTO restaurant \
   VALUES (default, ${name}, ${address}, ${category}) RETURNING id';
   db.one(q, columns)
