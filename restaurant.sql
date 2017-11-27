@@ -7,9 +7,10 @@ CREATE TABLE restaurant (
 
 CREATE TABLE reviewer (
 	id SERIAL NOT NULL PRIMARY KEY,
-	name VARCHAR,
+	rev_name VARCHAR,
 	email VARCHAR UNIQUE,
-	karma INTEGER DEFAULT 0 CHECK (karma >= 0 AND karma <= 7)
+	karma INTEGER DEFAULT 0 CHECK (karma >= 0 AND karma <= 7),
+    password VARCHAR
 );
 
 CREATE TABLE review (
